@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Question 1B - CSS Box Model</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #222;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .margin-box {
+            background-color: #f8b4b4;
+            width: 800px;
+            max-width: 90%;
+            padding: 45px;
+            margin: 30px auto;
+            box-sizing: border-box;
+        }
+
+        .border-box {
+            background-color: #f5a76c;
+            border: 8px solid #9c4a13;
+            padding: 45px;
+        }
+
+        .padding-box {
+            background-color: #ffe08a;
+            padding: 45px;
+        }
+
+        .content-box {
+            background-color: #a8dfb0;
+            padding: 55px 25px;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .box-label {
+            font-size: 22px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .explanation {
+            max-width: 800px;
+            margin: 40px auto;
+            text-align: left;
+            background-color: white;
+            padding: 25px 35px;
+            border-radius: 10px;
+            font-size: 18px;
+            line-height: 1.8;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS BOX MODEL</h1>
+
+    <p class="description">
+        Illustration of the four components
+        of the CSS Box Model
+    </p>
+
+    <div class="margin-box">
+        <span class="box-label">MARGIN</span>
+
+        <div class="border-box">
+            <span class="box-label">BORDER</span>
+
+            <div class="padding-box">
+                <span class="box-label">PADDING</span>
+
+                <div class="content-box">
+                    CONTENT
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="explanation">
+        <h2>Explanation of the CSS Box Model</h2>
+
+        <p>
+            <b>1. Content:</b>
+            The actual text, images, or information
+            displayed inside an HTML element.
+        </p>
+
+        <p>
+            <b>2. Padding:</b>
+            The space between the content and
+            the border of an element.
+        </p>
+
+        <p>
+            <b>3. Border:</b>
+            The line surrounding the content
+            and its padding.
+        </p>
+
+        <p>
+            <b>4. Margin:</b>
+            The space outside the border,
+            separating the element from others.
+        </p>
+    </div>
+
+</body>
+</html>
